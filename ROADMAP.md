@@ -1,28 +1,32 @@
 # ACDRL Research Roadmap
 
-The phases below are **evidence-gated**, not calendar commitments.
+**Version:** 0.2 — architecture-first revision (2026-10-19). Phases are evidence-gated, not deadlines.
 
-| Phase | Objective | Exit criteria | Status |
+| Phase | Main work | Exit evidence | Status |
 | --- | --- | --- | --- |
-| 0 — Infrastructure | Repository, charter, documentation, environment plan | Foundational records reviewed; first protocol drafted | In progress |
-| 1 — Spacecraft foundations | Ground/space architecture, interfaces, constraints, threat model, literature | Traceable architecture, safety assumptions, initial research question | Planned |
-| 2 — Spacecraft simulation | Isolated environment, normal operation, controlled anomalies, rule baselines | Repeatable simulation, verified scenarios, baseline metrics | Planned |
-| 3 — AI detection | ML/anomaly methods and evaluation under realistic constraints | Baseline comparisons, uncertainty and robustness analysis | Planned |
-| 4 — Adaptive defense | MDP formulation, decision baselines, Monte Carlo and constrained RL | Safety-aware evaluation and documented failure modes | Planned |
-| 5 — Financial transfer | Simulated payment infrastructure and domain adaptation | Independent comparison of transferable and non-transferable methods | Planned |
+| 0 — Governance and research setup | Repository, charter, logs, evidence standards | Documents versioned and reviewed | Documentation established |
+| 1 — CORE-001 architecture | Domain-neutral modules, event/state/action contracts, safety policies, evaluation protocol, literature matrix | Reviewed architecture, test cases and interface schemas | **Current priority** |
+| 2 — Minimum viable core | Event ingestion, rule detection, risk scoring, policy selection, safety veto, advisory response, audit trail | Unit tests, deterministic fixture tests, reproducible outputs | Planned |
+| 3 — Spacecraft adapter and simulator | Map spacecraft telemetry/commands and safety constraints into core contracts; run ACDRL-SIM-001 | Validated simulation, baseline metrics and integration tests | Planned |
+| 4 — Advanced decision research | Uncertainty, Monte Carlo trials, optimization and constrained RL where justified | Comparative experiments, safety/failure analysis | Planned |
+| 5 — Financial adapter and transfer | Map synthetic payment events, transaction integrity and continuity constraints into core | Independent benchmarks, adaptation costs and failure cases | Planned |
+| 6 — Synthesis and dissemination | Cross-domain analysis, replication, publications and technical demonstrations | Verifiable research outputs and external review where available | Planned |
 
-## First milestone: ACDRL-SETUP-001
-**Goal:** Create research documentation and confirm GitHub structure.
+## Immediate milestone — ACDRL-CORE-001
+**Objective:** specify the reusable defense framework before building domain-specific simulation code.
 
-**Next actions:** review charter; select spacecraft system boundary; build a literature matrix; write protocol ACDRL-SYS-001; specify the local Python environment.
+**Deliverables:**
+1. `research/core/CORE_ARCHITECTURE.md`: module responsibilities, flow and boundaries.
+2. `research/core/INTERFACE_CONTRACTS.md`: common observation, context, alert, decision, action and evidence structures.
+3. `research/protocols/ACDRL-CORE-001.md`: research questions, hypotheses, baselines, validation and transfer strategy.
 
-**Exit evidence:** reviewed project documents, initial commit references, and approved first research protocol.
+**Exit gate:** contract schemas, threat/safety assumptions, failure behavior and deterministic core test fixtures reviewed. No algorithmic novelty or effectiveness claimed yet.
+
+## Relationship to earlier work
+The existing spacecraft documents `research/spacecraft/` and `research/protocols/ACDRL-SYS-001.md`, `ACDRL-SIM-001.md` are preserved as domain-one validation specifications. Their simulation implementation is deferred until the common core can accept synthetic events and issue safe advisory decisions.
 
 ## Research workflow
 Problem → Literature → Gap assessment → Question → Hypothesis → Model → Design → Baseline → Experiment → Evaluation → Evidence → Decision.
 
-## Decision gates
-Do not advance solely because code executes. Require documented objectives, appropriate comparison, reproducibility, explicit limitations, and a justified next experiment.
-
-## Publication strategy
-Publications emerge from verified findings. A possible trajectory is spacecraft threat detection → safe adaptive defense → transfer to financial infrastructure. Exact paper titles and novelty claims remain provisional until literature review and results.
+## Release and communication gates
+Do not publish performance claims without a recorded protocol, reproducible runs, baseline comparisons and limitations. Project documentation may be shared as an engineering milestone but not as a validated research finding.
