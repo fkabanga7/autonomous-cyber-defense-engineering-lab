@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+
+# IDE and OS
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets / keys
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# Large or generated research data
+data/raw/
+data/interim/
+data/processed/
+outputs/
+artifacts/
+checkpoints/
+models/
+*.pcap
+*.pcapng
+*.parquet
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Logs
+*.log
+logs/
