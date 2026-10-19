@@ -1,38 +1,51 @@
 # ACDRL Project Charter
 
-**Version:** 0.1 — initial charter  
-**Status:** Proposed research framework; no validated scientific results yet.
+**Version:** 0.2 — architecture-first revision (2026-10-19)  
+**Status:** Research and engineering design; no validated scientific results yet.
 
 ## Mission
-Research and engineer AI-supported, safety-aware cyber defense for mission-critical systems, beginning with spacecraft and ground-segment simulations and subsequently evaluating applicability to critical financial infrastructure.
+Design, implement and evaluate a **reusable, safety-aware autonomous cyber-defense engineering framework** for heterogeneous mission-critical systems. Spacecraft and ground-segment systems are the first validation domain; critical financial infrastructure is the second. The defense framework—not a particular simulator—is the primary engineering product.
 
-## Central question
-How can intelligent cyber-defense systems detect, evaluate, and respond to evolving threats while preserving the safety and operational continuity of mission-critical systems?
+## Central research question
+To what extent can a modular, safety-constrained autonomous cyber-defense architecture detect threats and select effective countermeasures across heterogeneous mission-critical systems while preserving domain-specific operational constraints?
 
-## Objectives
-1. Establish reproducible and safe spacecraft/ground-segment simulation environments.
-2. Characterize normal operations, faults, and authorized threat scenarios.
-3. Compare interpretable statistical and rule-based baselines with justified AI approaches.
-4. Formulate and evaluate defensive decision-making under explicit operational constraints.
-5. Test robustness, uncertainty, failure modes, and human-oversight requirements.
-6. Evaluate cross-domain transfer to financial infrastructure without assuming equivalence.
+## Scientific and engineering objectives
+1. Define a domain-independent core with explicit interfaces for observations, context, detection, risk, decisions, safety policy, response and evaluation.
+2. Implement a minimal deterministic core and test harness before domain-specific complexity.
+3. Compare transparent rule/statistical baselines with ML only where justified.
+4. Specify constraints, uncertainty, authorization, human oversight and auditable outcomes before autonomous action.
+5. Validate with a simulated spacecraft and ground-segment adapter.
+6. Evaluate independent transfer to a simulated financial payment-infrastructure adapter; measure necessary adaptation and failures rather than assuming generality.
+7. Preserve reproducibility and verifiable evidence for research communication.
 
-## Scope
-**Included:** applied mathematics, probability, Monte Carlo methods, system modeling, anomaly detection, graph methods when justified, MDPs, reinforcement learning, constrained optimization, cyber-resilience engineering, reproducibility.
+## Architecture boundaries
+**Reusable core:** event normalization, state/context representation, detection interfaces, risk assessment, decision policy, safety gate, response authorization, audit trail and evaluation.
 
-**Excluded:** unauthorized access to live infrastructure, claims of real-world effectiveness based only on simulation, sensitive operational datasets without permission, and unsupported novelty claims.
+**Domain adapters:** convert native telemetry, command, transaction or infrastructure events to common contracts; provide domain-specific actions, constraints, risk consequences and ground truth for evaluation.
 
-## Working principles
-- Research questions precede model selection.
-- Literature review precedes claims of research gaps.
-- Baselines precede advanced algorithms.
-- Reproducibility and safety are mandatory.
-- Negative results and limitations are preserved.
-- Engineering, learning exercises, and scientific contributions are distinguished.
-- Public communication must accurately reflect achieved evidence.
+**Simulation/test environments:** generate controlled operating conditions and labeled faults/threats. They are research instruments, not the primary product.
+
+## Scope and exclusions
+Included: software engineering, applied mathematics, probabilistic modeling, Monte Carlo evaluation, detection, optimization, graph methods where justified, MDPs and safe/constrained RL as later research.
+
+Excluded: live-system targeting without authorization; automatic disruptive responses in early prototypes; assumptions that cross-domain transfer works without evidence; claims of operational validation or novelty based solely on simulation.
+
+## Research method and evidence
+Problem → Literature → Gap assessment → Research question → Hypothesis → Model → Baselines → Controlled experiment → Evaluation → Evidence → Decision. Preserve seeds, configurations, code revision, data provenance, logs, failure cases and limitations. Differentiate learning, engineering validation and scientific novelty.
+
+## Safety and governance
+- The core must default to observation/advisory mode until a domain adapter provides approved action capabilities and a safety gate.
+- Every decision must be explainable at the interface level and auditable; safety gates can veto actions.
+- Domain-specific constraints are authoritative; common abstractions do not erase operational differences.
+- Changes to scope or protocol must be logged in RESEARCH_LOG.md.
+- The project owner approves GitHub modifications performed by the assistant.
+- Public claims must match achieved evidence. No sensitive financial or spacecraft data may be published.
+
+## Existing research assets
+The existing ACDRL-SYS-001/002 spacecraft architecture, threat model, mathematical model, telemetry schema and simulation protocol are **retained unchanged** as provisional specifications for the first validation domain. They do not dictate the architecture of the reusable core.
+
+## Initial milestone
+**ACDRL-CORE-001:** document core modules, contracts, trust boundaries, safe decision lifecycle, and cross-domain test strategy. Implement a small event-to-advisory pipeline only after reviewing the specification.
 
 ## Outputs
-Research protocols, source code, validated simulations, experiment reports, benchmark results, engineering prototypes, and scientific manuscripts where warranted.
-
-## Governance
-Changes to research scope, experimental protocols, or publication claims must be recorded in RESEARCH_LOG.md. GitHub modifications require project-owner approval when conducted by the assistant.
+Versioned architecture, tested reusable code, domain adapters, reproducible experiment packages, engineering evidence, and scientific manuscripts where justified.
