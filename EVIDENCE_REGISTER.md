@@ -1,6 +1,6 @@
 # ACDRL Evidence Register
 
-Purpose: maintain verifiable research and engineering artifacts, and assess their suitability for GitHub, LinkedIn, scientific publication, and a possible EB-2 NIW evidence portfolio.
+Purpose: maintain verifiable research and engineering artifacts, and assess their suitability for GitHub, LinkedIn, scientific publication, and other public scientific or technical communication.
 
 ## Evidence table
 
@@ -20,7 +20,7 @@ Purpose: maintain verifiable research and engineering artifacts, and assess thei
 2. Distinguish simulation findings from live operational validation.
 3. Never publish secrets, sensitive vulnerabilities, restricted mission details, or confidential financial information.
 4. A LinkedIn post may describe a completed milestone, not imply scientific novelty or peer review.
-5. An EB-2 NIW evidence package may reference documented work but must not equate publication volume with immigration eligibility or guarantee an outcome.
+5. Keep the register focused on research quality, reproducibility, engineering evidence, and independently verifiable impact.
 
 ## Evidence entry template
 - **ID / date / experiment:**
@@ -30,4 +30,4 @@ Purpose: maintain verifiable research and engineering artifacts, and assess thei
 - **Independent verification, if any:**
 - **Limitations:**
 - **Public disclosure review:**
-- **Suitable for:** GitHub / LinkedIn / manuscript / NIW portfolio
+- **Suitable for:** GitHub / LinkedIn / technical report / manuscript
