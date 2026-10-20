@@ -8,6 +8,8 @@ Purpose: maintain verifiable research and engineering artifacts, and assess thei
 | --- | --- | --- | --- | --- | --- |
 | ACDRL-EV-0001 | ACDRL-SETUP-001 | Initial research charter and governance documentation | Record Git commit after creation | Documentation only | May describe as project setup; not research validation |
 
+| ACDRL-EV-0002 | ACDRL-CORE-002-UT-001 | Initial advisory-only core and local unit-test output | GitHub baseline commit `8c12e886b802cc046e8eb1aaaafa8726c594ac89`; user-provided VS Code screenshot, 2026-10-20 (not stored in repo); local execution SHA not independently captured | **Engineering validation: 11/11 unit tests passed** | May state successful initial local unit tests; no claims of AI effectiveness, operational deployment, or proven cross-domain generalization |
+
 ## Evidence classes
 - **Scientific:** protocols, hypotheses, mathematical models, controlled comparisons, statistics, limitations.
 - **Engineering:** simulation code, tested components, architecture, CI, documented prototypes.
