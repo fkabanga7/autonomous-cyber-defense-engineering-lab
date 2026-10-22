@@ -1,0 +1,16 @@
+test_denial_alert (test_detection.PipelineTests.test_denial_alert) ... ok
+test_deterministic (test_detection.PipelineTests.test_deterministic) ... ok
+test_normal_no_action (test_detection.PipelineTests.test_normal_no_action) ... ok
+test_two_domains_same_pipeline (test_detection.PipelineTests.test_two_domains_same_pipeline) ... ok
+test_bool_step_rejected (test_ingestion.IngestionTests.test_bool_step_rejected) ... ok
+test_invalid_schema (test_ingestion.IngestionTests.test_invalid_schema) ... ok
+test_missing_field (test_ingestion.IngestionTests.test_missing_field) ... ok
+test_valid (test_ingestion.IngestionTests.test_valid) ... ok
+test_advisory_allowed_but_not_executed (test_safety.SafetyTests.test_advisory_allowed_but_not_executed) ... ok
+test_disruptive_action_vetoed (test_safety.SafetyTests.test_disruptive_action_vetoed) ... ok
+test_missing_policy_fails_closed (test_safety.SafetyTests.test_missing_policy_fails_closed) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.001s
+
+OK
