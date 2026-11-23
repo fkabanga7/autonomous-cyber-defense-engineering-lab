@@ -42,6 +42,19 @@ Chronological, append-only record of significant project decisions, milestones, 
 
 **Next:** Preserve the result as an engineering baseline; collect `git rev-parse HEAD` and a machine-readable test log for stronger reproducibility; design CORE-003 stateful detection and policy controls.
 
+## 2026-11-23 — Financial-first alignment and project restart (ACDRL-ALIGN-001)
+**Decision:** Keep a domain-independent core; make critical financial payment systems the first validation testbed and spacecraft the second domain, evaluated last as an independent transfer study. This supersedes the 2026-10-19 spacecraft-first sequence while preserving its architecture-first principle.
+
+**Further decisions:** Master language is French for drafting; this repository is English only. The general introduction is domain-neutral. Publication goal is three focused articles (H1; H2 and H3; H4) instead of a single large document. The literature review is completed before CORE-004 and CORE-005. A minimal financial testbed is built in parallel with CORE-003. The first experiment compares CORE-002 and CORE-003 (H1) under a preregistered protocol. A separate fraud-classification idea based on PaySim is set aside as not directly serving H1 to H4.
+
+**Authorization:** Project owner authorized repository modifications by the assistant on 2026-11-23.
+
+**Actions:** Aligned README, charter (v0.3) and roadmap (v0.4); corrected roadmap table defects (literal `\n` sequences, duplicate Phase 4, CORE-003 deliverables copied from CORE-001); added `docs/MASTER_FRAMEWORK.md` and `research/protocols/ACDRL-FIN-001.md` (draft); registered ACDRL-FIN-001.
+
+**Research results:** None. This is a governance and planning milestone.
+
+**Next:** Review ACDRL-FIN-001; start the literature matrix; implement CORE-003 and the minimal financial generator.
+
 ## Log template
 ### YYYY-MM-DD — Milestone ID
 - **Question or decision:**
