@@ -38,8 +38,7 @@ Problem → Literature → Gap assessment → Research question → Hypothesis �
 - Every decision must be explainable at the interface level and auditable; safety gates can veto actions.
 - Domain-specific constraints are authoritative; common abstractions do not erase operational differences.
 - Changes to scope or protocol must be logged in RESEARCH_LOG.md.
-- The project owner approves GitHub modifications performed by the assistant. On 2026-11-23 the owner authorized the assistant to commit alignment changes to this repository; scope beyond that authorization requires fresh approval.
-- The repository is maintained in English only.
+- The project owner approves GitHub modifications performed by the assistant.
 - Public claims must match achieved evidence. No sensitive financial or spacecraft data may be published.
 
 ## Existing research assets
