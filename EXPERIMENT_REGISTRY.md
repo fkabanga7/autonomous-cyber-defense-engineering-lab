@@ -4,8 +4,8 @@ No scientific experiments have been completed yet. This registry distinguishes p
 
 | Experiment ID | Question | Protocol | Status | Evidence | Conclusion |
 | --- | --- | --- | --- | --- | --- |
-| ACDRL-SYS-001 | What spacecraft/ground-segment system boundary and safety constraints should the first simulator represent? | To be drafted | Planned | None | Not evaluated |
-
+| ACDRL-FIN-001 | What financial payment-system boundary, threat scenarios, observations, defensive actions and hard constraints should the first testbed represent? | `research/protocols/ACDRL-FIN-001.md` (draft v0.1) | Planned; protocol drafted, not approved | None | Not evaluated |
+| ACDRL-SYS-001 | What spacecraft/ground-segment system boundary and safety constraints should the second-domain simulator represent? | `research/protocols/ACDRL-SYS-001.md` (draft) | Planned (second domain) | None | Not evaluated |
 | ACDRL-CORE-002-UT-001 | Does the initial advisory-only core pass its deterministic unit tests on the owner's Mac? | `PYTHONPATH=src python -m unittest discover -s tests -v` (engineering test procedure; not a scientific experiment protocol) | **Engineering unit tests: passed 2026-10-20** | Owner-provided terminal screenshot (not archived in repo); 11/11 `ok`, `OK`; baseline GitHub revision `8c12e886b802cc046e8eb1aaaafa8726c594ac89` (local HEAD at execution unconfirmed) | Selected unit tests passed; no scientific or operational effectiveness established |
 
 ## Required experiment record
